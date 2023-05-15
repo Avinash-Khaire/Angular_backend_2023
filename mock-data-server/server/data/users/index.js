@@ -1,4 +1,9 @@
 const getUsers = require('./json/getUsers.json');
-module.exports={
-    getUsers:getUsers
+
+function getUsersData() {
+  return getUsers.data.users;
 }
+
+module.exports = {
+  getUsersData
+};
